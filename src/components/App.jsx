@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import Todo from "./Todo";
 
 function App() {
-  const [inputText, setInputText] = useState("Vink item to delete");
-  const [todoItems, setItems] = useState([]);
+ const [inputText, setInputText] = useState("");
+  const [todoItems, setItems] = useState([
+    "Touch to line",
+    "Vink to delete =>"
+  ]);
 
   function handleChange(event) {
     const newValue = event.target.value;
